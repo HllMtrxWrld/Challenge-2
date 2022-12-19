@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+:root {
+  --grey-colour: #708090;
+  --blue-colour: #afeeee; 
+}
+
+/* Header */
+
+.header {
+  background-color: var(--grey-colour);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav a {
+  color: var(--blue-colour);
+  font-size: large;
+}
+
+#logo {
+  background-color: var(--blue-colour);
+  margin: 5px;
+}
+
+/* Hero banner */
+
+.hero-banner {
+  height: 200px;
+  background-image: url(../images/02-hero-bg.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+#banner-text {
+  background-color: var(--blue-colour);
+  width: 250px;
+  margin: 0px 30px 10px 0px;
+  }
+
+/* About Me */
+
+.page-wrapper {}
+
+.page-section {
+  display: flex;
+  padding: 20px;
+}
+
+.page-section h2 {
+  border-right: 5px solid var(--grey-colour);
+  font-size: 40px;
+  padding: 20px;
+  flex-basis: 200px;
+}
+.page-section p {
+  padding: 20px;
+}
+
+/* Portfolio container */
+
+.portfolio {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 50% 25% 25%;
+  grid-template-areas: 
+    "report report"
+    "wall calculator"
+    "puzzels run_buddy";
+  grid-gap: 30px;
+  padding: 20px;
+}
+
+#work {
+  height: 800px;
+}
+
+#report {
+  grid-area: report;
+  background-image: url(../images/02-portfolio-4.jpg);
+  background-size: cover;
+}
+
+#wall {
+  grid-area: wall;
+  background-image: url(../images/02-portfolio-1.jpg);
+  background-size: cover;
+}
+
+#calculator {
+  grid-area: calculator;
+  background-image: url(../images/02-portfolio-2.jpg);
+  background-size: cover;
+}
+
+#puzzels {
+  grid-area: puzzels;
+  background-image: url(../images/02-portfolio-3.jpg);
+  background-size: cover;
+
+}
+
+#run_buddy {
+  grid-area: run_buddy;
+  background-image: url(../images/02-run-buddy.jpg);
+  background-size: cover;
+}
+
+
+
+
+.contakt_list {
+  display: flex;
+  align-items: center;
+}
+.contakt_list a {
+  padding: 80px;
+  color: var(--blue-colour);
+  font-size: large;
+}
+
+/*@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}*/
